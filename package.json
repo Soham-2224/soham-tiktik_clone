@@ -1,0 +1,31 @@
+{
+  "name": "sanity",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@react-oauth/google": "^0.2.6",
+    "@sanity/client": "^3.3.0",
+    "axios": "^0.27.2",
+    "jwt-decode": "^3.1.2",
+    "next": "12.2.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.3.1",
+    "uuidv4": "^6.2.13",
+    "zustand": "^4.0.0-rc.1"
+  },
+  "devDependencies": {
+    "@types/node": "18.6.3",
+    "@types/react": "18.0.15",
+    "@types/react-dom": "18.0.6",
+    "eslint": "8.21.0",
+    "eslint-config-next": "12.2.3",
+    "typescript": "4.7.4"
+  }
+}

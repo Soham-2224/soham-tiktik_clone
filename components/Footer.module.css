@@ -1,0 +1,19 @@
+.container {
+  margin-top: 24px;
+  display: block;
+}
+
+.container div p {
+  color: rgb(154, 154, 154);
+  font-size: small;
+  cursor: pointer;
+}
+.container div p:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .container {
+    display: none;
+  }
+}

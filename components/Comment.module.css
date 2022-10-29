@@ -1,0 +1,81 @@
+.container {
+    border-top: 2px solid #ccc;
+    padding-top: 1rem;
+    padding-inline: 2.5rem;
+    background: #f8f8f8;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: none;
+}
+
+.container p {
+    margin: 0;
+}
+
+.container__overflowScroll {
+    overflow: scroll;
+    height: 475px;
+}
+
+.formContainer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 24px;
+    padding-inline: 40px;
+}
+
+.formContainer form {
+    display: flex;
+    gap: 16px;
+}
+
+.formContainer form input {
+    background: var(--bg-primary);
+    padding-inline: 24px;
+    padding-block: 16px;
+    font-weight: 500;
+    font-size: 17px;
+    border: 1px solid #ccc;
+    width: 350px;
+    flex: 1;
+    border-radius: 8px;
+}
+
+.formContainer form input:focus {
+    outline: none;
+    border-width: 2px;
+    border-color: rgb(173, 173, 173);
+}
+
+.formContainer form button {
+    font-size: 16px;
+    color: rgb(159, 157, 157);
+    padding-inline: 1.5rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+@media (max-width: 640px) {
+    .container {
+        padding-bottom: 100px;
+    }
+
+    .container__overflowScroll {
+        height: 0;
+    }
+
+    .formContainer {
+        padding-inline: 8px;
+    }
+
+    .formContainer form input {
+        width: 25px;
+    }
+}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 1280px) {}
+
+@media (min-width: 1536px) {}

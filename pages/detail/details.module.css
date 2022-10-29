@@ -1,0 +1,144 @@
+.details__container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    background: white;
+}
+
+.details__container .container__left {
+    position: relative;
+    flex-grow: 1;
+    flex-shrink: 1;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    overflow: hidden;
+}
+
+.container__left .wrapper__cancel {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    display: flex;
+    gap: 24px;
+    z-index: 50;
+}
+
+.container__left .wrapper__videoContainer {
+    position: relative;
+}
+
+.wrapper__videoContainer div {
+    height: 100vh;
+}
+
+.wrapper__videoContainer div:nth-child(2) {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+}
+
+.wrapper__videoContainer button {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+.wrapper__videoContainer button>* {
+    color: white;
+    font-size: 80px;
+}
+
+.wrapper__muteBtn {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    cursor: pointer;
+}
+
+.wrapper__muteBtn button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.wrapper__muteBtn button>* {
+    color: white;
+    font-size: 24px;
+}
+
+.container__right {
+    position: relative;
+    width: 700px;
+}
+
+.container__right .container__wrapper {
+    margin-top: 80px;
+}
+
+.container__right .wrapper__ProfileImage {
+    width: 70px;
+    height: 70px;
+    margin-left: 16px;
+}
+
+.container__right .wrapper__postedByName {
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+}
+
+.wrapper__postedByName p {
+    margin: 0;
+}
+
+.container__right .wrapper__postedByName p:nth-child(1) {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: medium;
+    margin-block: 5px;
+}
+
+.wrapper__postedByName p:nth-child(2) {
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: var(--text-xs);
+    color: rgb(109, 97, 97);
+    display: block;
+}
+
+
+@media (max-width: 640px) {
+    .details__container {
+        flex-wrap: wrap;
+    }
+
+    .wrapper__muteBtn {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .container__right {
+        position: relative;
+        width: 1000px;
+    }
+
+    .container__right .container__wrapper {
+        margin-top: 40px;
+    }
+
+    .container__right .wrapper__ProfileImage {
+        width: 64px;
+        height: 64px;
+    }
+}

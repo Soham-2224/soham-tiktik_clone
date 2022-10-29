@@ -1,0 +1,54 @@
+.container {
+    padding-bottom: 16px;
+}
+
+.container .title {
+    color: lightgray;
+    font-weight: 600;
+    padding-bottom: 16px;
+    display: block;
+}
+
+.accountContainer {
+    display: flex;
+    gap: 12px;
+    padding: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 2px;
+}
+
+.accountContainer:hover {
+    background: var(--bg-primary);
+}
+
+.accountName {
+    display: block;
+}
+
+.accountName p {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 0;
+    text-transform: lowercase;
+}
+
+@media (max-width: 640px) {
+    .container p {
+        display: none;
+    }
+
+    .accountName {
+        display: none;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        border-bottom: 2px solid rgb(229, 231, 235);
+    }
+}

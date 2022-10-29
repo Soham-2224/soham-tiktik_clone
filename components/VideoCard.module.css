@@ -1,0 +1,107 @@
+.wrapper {
+  width: 64px;
+  height: 64px;
+}
+
+.postedByName {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.postedByName p:nth-child(1) {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  color: var(--primary-color);
+  font-size: medium;
+}
+
+.postedByName p:nth-child(2) {
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: var(--text-xs);
+  color: rgb(109, 97, 97);
+  display: block;
+}
+
+.video {
+  margin-left: 80px;
+  display: flex;
+  gap: 16px;
+  position: relative;
+}
+
+.video div video {
+  width: 700px;
+  height: 530px;
+  object-fit: contain;
+  cursor: pointer;
+  background: rgb(234 234 234);
+}
+
+.videoControls {
+  position: absolute;
+  width: 50px;
+  bottom: 24px;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.videoControls button {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.videoControls button>* {
+  color: black;
+  font-size: 24px;
+}
+
+@media (max-width: 820px) {
+  .wrapper {
+    width: 64px;
+    height: 64px;
+  }
+
+  .video {
+    margin-left: 0;
+  }
+
+  .video div video {
+    width: 200px;
+    height: 300px;
+  }
+
+  .videoControls {
+    width: 50px;
+    left: 56px;
+  }
+}
+
+@media (max-width: 640px) {
+  .wrapper {
+    width: 40px;
+    height: 40px;
+  }
+
+  .postedByName p:nth-child(2) {
+    display: none;
+  }
+
+  .video div video {
+    height: 400px;
+  }
+
+  .videoControls {
+    width: 100px;
+    left: 32px;
+    justify-content: flex-start;
+  }
+}
