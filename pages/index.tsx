@@ -20,7 +20,7 @@ const Home = ({ videos }: IProps) => {
      />
     ))
    ) : (
-    <NoResults text={"No Videos"} />
+    <NoResults text={"No Videos "} />
    )}
   </div>
  );
