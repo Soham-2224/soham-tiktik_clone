@@ -20,8 +20,6 @@ const Navbar = () => {
  }: { userProfile: any; addUser: any; removeUser: any } = useAuthStore();
  const [searchValue, setSearchValue] = useState("");
 
- const { _id }: any = userProfile;
-
  const router = useRouter();
 
  const handleSearch = (e: React.FormEvent) => {
@@ -68,7 +66,7 @@ const Navbar = () => {
        </button>
       </Link>
       {userProfile?.image && (
-       <Link href={`/profile/${_id}`}>
+       <Link href={`/`}>
         <>
          <Image
           width={40}
