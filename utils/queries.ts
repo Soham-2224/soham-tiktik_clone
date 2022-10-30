@@ -100,7 +100,9 @@ export const allUsersQuery = () => {
  return query;
 };
 
-export const userCreatedPostsQuery = (userId: string | string[]) => {
+export const userCreatedPostsQuery = (
+ userId: string | string[] | undefined
+) => {
  const query = `*[ _type == 'post' && userId == '${userId}'] | order(_createdAt desc){
     _id,
      caption,
@@ -132,7 +134,7 @@ export const userCreatedPostsQuery = (userId: string | string[]) => {
  return query;
 };
 
-export const userLikedPostsQuery = (userId: string | string[]) => {
+export const userLikedPostsQuery = (userId: string | string[] | undefined) => {
  const query = `*[_type == 'post' && '${userId}' in likes[]._ref ] | order(_createdAt desc) {
     _id,
      caption,
